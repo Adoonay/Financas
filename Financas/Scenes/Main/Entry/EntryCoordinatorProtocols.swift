@@ -13,5 +13,6 @@ protocol EntryCoordinatorDelegate: AnyObject {
 
 protocol EntryCoordinatorProtocol: AnyObject {
     func continueToAddEntry()
+    func dismissReloadList()
 }
 

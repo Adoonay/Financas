@@ -10,6 +10,7 @@ import UIKit
 class MainCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
+    var service: FinancasServiceProtocol = FinancasServiceUserDefaults()
 
     lazy var tabBarController: TabBarController = {
         let tabBarController = TabBarController()
@@ -22,12 +23,16 @@ class MainCoordinator: Coordinator {
     
     func start() {
         let entryNavigation = UINavigationController()
-        let entryCoordinator = EntryCoordinator(navigationController: entryNavigation, delegate: self)
+        let entryCoordinator = EntryCoordinator(navigationController: entryNavigation, 
+                                                service: service,
+                                                delegate: self)
         entryCoordinator.start()
         childCoordinators.append(entryCoordinator)
 
         let categoryNavigation = UINavigationController()
-        let categoryCoordinator = CategoryCoordinator(navigationController: categoryNavigation, delegate: self)
+        let categoryCoordinator = CategoryCoordinator(navigationController: categoryNavigation, 
+                                                      service: service,
+                                                      delegate: self)
         categoryCoordinator.start()
         childCoordinators.append(categoryCoordinator)
 

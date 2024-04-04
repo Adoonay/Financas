@@ -7,20 +7,49 @@
 
 import UIKit
 
-class EntryListViewController: UIViewController {
+class EntryListViewController: UIViewController, CodeView {
     var viewModel: EntryListViewModelProtocol
+
+    lazy var contentView: EntryListView = {
+        let view = EntryListView(viewModel: viewModel)
+        return view
+    }()
 
     init(viewModel: EntryListViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        view.backgroundColor = .green
+    }
 
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleAdd)))
+    override func loadView() {
+        view = contentView
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+
+        viewModel.fetchList()
     }
 
     @objc
     func handleAdd() {
         viewModel.didTapAdd()
+    }
+
+    func setupAdditionalConfiguration() {
+        navigationItem.title = "Lançamentos"
+        setupNavigation()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus.circle.fill"), 
+                                                            style: .plain, target: self, action: #selector(handleAdd))
+    }
+
+    func buildViewHierarchy() {
+
+    }
+
+    func setupConstraints() {
+
     }
 
     required init?(coder: NSCoder) {

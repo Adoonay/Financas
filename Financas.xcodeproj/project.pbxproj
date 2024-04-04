@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE7036032B0D1CD7006C64F2 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036022B0D1CD7006C64F2 /* CategoryListViewController.swift */; };
+		EE7036052B0D1CDF006C64F2 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036042B0D1CDF006C64F2 /* CategoryListViewModel.swift */; };
+		EE7036082B0D1E2F006C64F2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036072B0D1E2F006C64F2 /* UIViewController.swift */; };
+		EE7036122B17ADAA006C64F2 /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036112B17ADAA006C64F2 /* EntryListView.swift */; };
+		EE7036142B17B601006C64F2 /* EntryListCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036132B17B601006C64F2 /* EntryListCardsView.swift */; };
+		EE7036162B17BC13006C64F2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036152B17BC13006C64F2 /* CardView.swift */; };
+		EE7036192B18BC19006C64F2 /* EntryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036182B18BC19006C64F2 /* EntryType.swift */; };
+		EE70361C2B18C165006C64F2 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70361B2B18C165006C64F2 /* IconView.swift */; };
+		EE70361E2B18CE34006C64F2 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70361D2B18CE34006C64F2 /* UIView.swift */; };
+		EE7036202B18D1AC006C64F2 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70361F2B18D1AC006C64F2 /* Entry.swift */; };
+		EE7036222B18D1FA006C64F2 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036212B18D1FA006C64F2 /* EntryCell.swift */; };
+		EEE2110B2B98FDB0003BF18E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2110A2B98FDB0003BF18E /* CategoryCell.swift */; };
+		EEE2110D2B98FF8F003BF18E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2110C2B98FF8F003BF18E /* Category.swift */; };
+		EEE2111C2BBDB8CC003BF18E /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2111B2BBDB8CC003BF18E /* Textfield.swift */; };
+		EEE2112D2BBDBAA1003BF18E /* EntryAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2112A2BBDBAA1003BF18E /* EntryAddViewModel.swift */; };
+		EEE2112F2BBDBAA1003BF18E /* EntryAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2112C2BBDBAA1003BF18E /* EntryAddViewController.swift */; };
+		EEE211312BBDBB21003BF18E /* EntryAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211302BBDBB21003BF18E /* EntryAddView.swift */; };
+		EEE211332BBDC2B4003BF18E /* TextfieldIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211322BBDC2B4003BF18E /* TextfieldIconView.swift */; };
+		EEE211352BBDC4D5003BF18E /* ArrowTextfieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211342BBDC4D4003BF18E /* ArrowTextfieldIcon.swift */; };
+		EEE211372BBDD87E003BF18E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211362BBDD87E003BF18E /* Double.swift */; };
+		EEE211392BBDD998003BF18E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211382BBDD998003BF18E /* String.swift */; };
+		EEE211402BBF20FE003BF18E /* CategoryAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2113D2BBF20FE003BF18E /* CategoryAddModel.swift */; };
+		EEE211412BBF20FE003BF18E /* CategoryAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2113E2BBF20FE003BF18E /* CategoryAddViewModel.swift */; };
+		EEE211422BBF20FE003BF18E /* CategoryAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2113F2BBF20FE003BF18E /* CategoryAddViewController.swift */; };
+		EEE211442BBF21C1003BF18E /* CategoryAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211432BBF21C1003BF18E /* CategoryAddView.swift */; };
+		EEE211462BBF2726003BF18E /* FinancasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211452BBF2726003BF18E /* FinancasService.swift */; };
+		EEE211482BBF3C89003BF18E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE211472BBF3C89003BF18E /* Date.swift */; };
 		EEECB95E2AFBB3A80039B984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECB95D2AFBB3A80039B984 /* AppDelegate.swift */; };
 		EEECB9602AFBB3A80039B984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECB95F2AFBB3A80039B984 /* SceneDelegate.swift */; };
 		EEECB9672AFBB3AA0039B984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEECB9662AFBB3AA0039B984 /* Assets.xcassets */; };
@@ -27,6 +54,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE7036022B0D1CD7006C64F2 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		EE7036042B0D1CDF006C64F2 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		EE7036072B0D1E2F006C64F2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		EE7036112B17ADAA006C64F2 /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
+		EE7036132B17B601006C64F2 /* EntryListCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListCardsView.swift; sourceTree = "<group>"; };
+		EE7036152B17BC13006C64F2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EE7036182B18BC19006C64F2 /* EntryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
+		EE70361B2B18C165006C64F2 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		EE70361D2B18CE34006C64F2 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		EE70361F2B18D1AC006C64F2 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		EE7036212B18D1FA006C64F2 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		EEE2110A2B98FDB0003BF18E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		EEE2110C2B98FF8F003BF18E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EEE2111B2BBDB8CC003BF18E /* Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfield.swift; sourceTree = "<group>"; };
+		EEE2112A2BBDBAA1003BF18E /* EntryAddViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryAddViewModel.swift; sourceTree = "<group>"; };
+		EEE2112C2BBDBAA1003BF18E /* EntryAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryAddViewController.swift; sourceTree = "<group>"; };
+		EEE211302BBDBB21003BF18E /* EntryAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryAddView.swift; sourceTree = "<group>"; };
+		EEE211322BBDC2B4003BF18E /* TextfieldIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldIconView.swift; sourceTree = "<group>"; };
+		EEE211342BBDC4D4003BF18E /* ArrowTextfieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowTextfieldIcon.swift; sourceTree = "<group>"; };
+		EEE211362BBDD87E003BF18E /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		EEE211382BBDD998003BF18E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EEE2113D2BBF20FE003BF18E /* CategoryAddModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryAddModel.swift; sourceTree = "<group>"; };
+		EEE2113E2BBF20FE003BF18E /* CategoryAddViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryAddViewModel.swift; sourceTree = "<group>"; };
+		EEE2113F2BBF20FE003BF18E /* CategoryAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryAddViewController.swift; sourceTree = "<group>"; };
+		EEE211432BBF21C1003BF18E /* CategoryAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAddView.swift; sourceTree = "<group>"; };
+		EEE211452BBF2726003BF18E /* FinancasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancasService.swift; sourceTree = "<group>"; };
+		EEE211472BBF3C89003BF18E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		EEECB95A2AFBB3A80039B984 /* Financas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Financas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEECB95D2AFBB3A80039B984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEECB95F2AFBB3A80039B984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +113,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE7036012B0D1CC6006C64F2 /* CategoryList */ = {
+			isa = PBXGroup;
+			children = (
+				EE7036022B0D1CD7006C64F2 /* CategoryListViewController.swift */,
+				EE7036042B0D1CDF006C64F2 /* CategoryListViewModel.swift */,
+				EEE2110A2B98FDB0003BF18E /* CategoryCell.swift */,
+			);
+			path = CategoryList;
+			sourceTree = "<group>";
+		};
+		EE7036062B0D1E21006C64F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE7036072B0D1E2F006C64F2 /* UIViewController.swift */,
+				EE70361D2B18CE34006C64F2 /* UIView.swift */,
+				EEE211362BBDD87E003BF18E /* Double.swift */,
+				EEE211382BBDD998003BF18E /* String.swift */,
+				EEE211472BBF3C89003BF18E /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE7036172B18BC0C006C64F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE7036182B18BC19006C64F2 /* EntryType.swift */,
+				EE70361F2B18D1AC006C64F2 /* Entry.swift */,
+				EEE2110C2B98FF8F003BF18E /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE70361A2B18C15D006C64F2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EE70361B2B18C165006C64F2 /* IconView.swift */,
+				EEE2111B2BBDB8CC003BF18E /* Textfield.swift */,
+				EEE211322BBDC2B4003BF18E /* TextfieldIconView.swift */,
+				EEE211342BBDC4D4003BF18E /* ArrowTextfieldIcon.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EEE211292BBDBAA1003BF18E /* EntryAdd */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2112A2BBDBAA1003BF18E /* EntryAddViewModel.swift */,
+				EEE2112C2BBDBAA1003BF18E /* EntryAddViewController.swift */,
+				EEE211302BBDBB21003BF18E /* EntryAddView.swift */,
+			);
+			path = EntryAdd;
+			sourceTree = "<group>";
+		};
+		EEE2113C2BBF20FE003BF18E /* CategoryAdd */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2113D2BBF20FE003BF18E /* CategoryAddModel.swift */,
+				EEE2113E2BBF20FE003BF18E /* CategoryAddViewModel.swift */,
+				EEE2113F2BBF20FE003BF18E /* CategoryAddViewController.swift */,
+				EEE211432BBF21C1003BF18E /* CategoryAddView.swift */,
+			);
+			path = CategoryAdd;
+			sourceTree = "<group>";
+		};
 		EEECB9512AFBB3A80039B984 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +213,7 @@
 				EEECB9812AFBBA520039B984 /* TabBarController.swift */,
 				EEECB9752AFBB55C0039B984 /* MainCoordinatorProtocols.swift */,
 				EEECB9742AFBB55C0039B984 /* MainCoordinator.swift */,
+				EEE211452BBF2726003BF18E /* FinancasService.swift */,
 				EEECB9722AFBB4E10039B984 /* Entry */,
 				EEECB9732AFBB52A0039B984 /* Category */,
 			);
@@ -107,6 +226,7 @@
 				EEECB9852AFBD42C0039B984 /* EntryCoordinator.swift */,
 				EEECB9872AFBD4380039B984 /* EntryCoordinatorProtocols.swift */,
 				EEECB98D2AFBD7250039B984 /* EntryList */,
+				EEE211292BBDBAA1003BF18E /* EntryAdd */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -116,6 +236,8 @@
 			children = (
 				EEECB9892AFBD5630039B984 /* CategoryCoordinator.swift */,
 				EEECB98A2AFBD5630039B984 /* CategoryCoordinatorProtocols.swift */,
+				EE7036012B0D1CC6006C64F2 /* CategoryList */,
+				EEE2113C2BBF20FE003BF18E /* CategoryAdd */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -123,6 +245,9 @@
 		EEECB9782AFBB5690039B984 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				EE70361A2B18C15D006C64F2 /* UI */,
+				EE7036172B18BC0C006C64F2 /* Model */,
+				EE7036062B0D1E21006C64F2 /* Extensions */,
 				EEECB9792AFBB57B0039B984 /* RootViewController.swift */,
 				EEECB97A2AFBB57B0039B984 /* Bindable.swift */,
 				EEECB97B2AFBB57B0039B984 /* CodeView.swift */,
@@ -136,6 +261,10 @@
 			children = (
 				EEECB98E2AFBD7400039B984 /* EntryListViewModel.swift */,
 				EEECB9902AFBD74A0039B984 /* EntryListViewController.swift */,
+				EE7036112B17ADAA006C64F2 /* EntryListView.swift */,
+				EE7036132B17B601006C64F2 /* EntryListCardsView.swift */,
+				EE7036152B17BC13006C64F2 /* CardView.swift */,
+				EE7036212B18D1FA006C64F2 /* EntryCell.swift */,
 			);
 			path = EntryList;
 			sourceTree = "<group>";
@@ -218,21 +347,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE211422BBF20FE003BF18E /* CategoryAddViewController.swift in Sources */,
+				EE7036202B18D1AC006C64F2 /* Entry.swift in Sources */,
+				EEE211402BBF20FE003BF18E /* CategoryAddModel.swift in Sources */,
+				EE7036192B18BC19006C64F2 /* EntryType.swift in Sources */,
 				EEECB9802AFBB57B0039B984 /* Coordinator.swift in Sources */,
 				EEECB97D2AFBB57B0039B984 /* RootViewController.swift in Sources */,
+				EE7036082B0D1E2F006C64F2 /* UIViewController.swift in Sources */,
 				EEECB9912AFBD74A0039B984 /* EntryListViewController.swift in Sources */,
 				EEECB95E2AFBB3A80039B984 /* AppDelegate.swift in Sources */,
+				EEE2111C2BBDB8CC003BF18E /* Textfield.swift in Sources */,
 				EEECB9822AFBBA520039B984 /* TabBarController.swift in Sources */,
+				EEE211332BBDC2B4003BF18E /* TextfieldIconView.swift in Sources */,
 				EEECB9882AFBD4380039B984 /* EntryCoordinatorProtocols.swift in Sources */,
+				EE7036162B17BC13006C64F2 /* CardView.swift in Sources */,
+				EEE211352BBDC4D5003BF18E /* ArrowTextfieldIcon.swift in Sources */,
+				EE70361C2B18C165006C64F2 /* IconView.swift in Sources */,
 				EEECB97E2AFBB57B0039B984 /* Bindable.swift in Sources */,
+				EEE2112D2BBDBAA1003BF18E /* EntryAddViewModel.swift in Sources */,
+				EEE211462BBF2726003BF18E /* FinancasService.swift in Sources */,
 				EEECB98B2AFBD5630039B984 /* CategoryCoordinator.swift in Sources */,
+				EEE211412BBF20FE003BF18E /* CategoryAddViewModel.swift in Sources */,
+				EE7036032B0D1CD7006C64F2 /* CategoryListViewController.swift in Sources */,
 				EEECB9762AFBB55C0039B984 /* MainCoordinator.swift in Sources */,
+				EEE2112F2BBDBAA1003BF18E /* EntryAddViewController.swift in Sources */,
 				EEECB9602AFBB3A80039B984 /* SceneDelegate.swift in Sources */,
 				EEECB98F2AFBD7400039B984 /* EntryListViewModel.swift in Sources */,
+				EE70361E2B18CE34006C64F2 /* UIView.swift in Sources */,
+				EE7036142B17B601006C64F2 /* EntryListCardsView.swift in Sources */,
+				EEE211312BBDBB21003BF18E /* EntryAddView.swift in Sources */,
 				EEECB9862AFBD42C0039B984 /* EntryCoordinator.swift in Sources */,
 				EEECB9772AFBB55C0039B984 /* MainCoordinatorProtocols.swift in Sources */,
+				EEE211392BBDD998003BF18E /* String.swift in Sources */,
 				EEECB97F2AFBB57B0039B984 /* CodeView.swift in Sources */,
+				EE7036222B18D1FA006C64F2 /* EntryCell.swift in Sources */,
+				EEE211442BBF21C1003BF18E /* CategoryAddView.swift in Sources */,
+				EEE2110B2B98FDB0003BF18E /* CategoryCell.swift in Sources */,
+				EE7036052B0D1CDF006C64F2 /* CategoryListViewModel.swift in Sources */,
+				EEE211482BBF3C89003BF18E /* Date.swift in Sources */,
+				EE7036122B17ADAA006C64F2 /* EntryListView.swift in Sources */,
 				EEECB98C2AFBD5630039B984 /* CategoryCoordinatorProtocols.swift in Sources */,
+				EEE211372BBDD87E003BF18E /* Double.swift in Sources */,
+				EEE2110D2B98FF8F003BF18E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

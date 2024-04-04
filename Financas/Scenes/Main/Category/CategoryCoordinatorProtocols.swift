@@ -12,5 +12,6 @@ protocol CategoryCoordinatorDelegate: AnyObject { //Coordinator pai vai implenta
 }
 
 protocol CategoryCoordinatorProtocol: AnyObject { //ViewModel vai conhecer
-
+    func presentAddCategory()
+    func dismissReloadList()
 }
