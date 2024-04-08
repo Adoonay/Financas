@@ -44,6 +44,7 @@ extension CategoryListViewModel: CategoryListViewModelProtocol {
                 self.categories = categories
                 self.state.value = categories.isEmpty ? .empty : .ready
             case .failure(let failure):
+                self.state.value = .empty
                 print(failure)
             }
         }

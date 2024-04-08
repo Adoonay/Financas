@@ -10,7 +10,7 @@ import UIKit
 class MainCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-    var service: FinancasServiceProtocol = FinancasServiceUserDefaults()
+    var service: FinancasServiceProtocol = FinancasServiceFirebase()
 
     lazy var tabBarController: TabBarController = {
         let tabBarController = TabBarController()

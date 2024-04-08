@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82E2DE05874ADAFB57A8275D /* Pods_Financas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FB6AADD1794F679BD2DB8B /* Pods_Financas.framework */; };
+		EE2EB6EF2BC46D640062A613 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE2EB6EE2BC46D640062A613 /* GoogleService-Info.plist */; };
+		EE2EB6F12BC470A30062A613 /* FinancasServiceUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EB6F02BC470A30062A613 /* FinancasServiceUserDefaults.swift */; };
+		EE2EB6F42BC470DB0062A613 /* FinancasServiceFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EB6F32BC470DB0062A613 /* FinancasServiceFirebase.swift */; };
 		EE7036032B0D1CD7006C64F2 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036022B0D1CD7006C64F2 /* CategoryListViewController.swift */; };
 		EE7036052B0D1CDF006C64F2 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036042B0D1CDF006C64F2 /* CategoryListViewModel.swift */; };
 		EE7036082B0D1E2F006C64F2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7036072B0D1E2F006C64F2 /* UIViewController.swift */; };
@@ -54,6 +58,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44A843DE0E71DDD9619CB31A /* Pods-Financas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Financas.debug.xcconfig"; path = "Target Support Files/Pods-Financas/Pods-Financas.debug.xcconfig"; sourceTree = "<group>"; };
+		B2C4BD79DFF06E14C9DC7202 /* Pods-Financas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Financas.release.xcconfig"; path = "Target Support Files/Pods-Financas/Pods-Financas.release.xcconfig"; sourceTree = "<group>"; };
+		EE2EB6EE2BC46D640062A613 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE2EB6F02BC470A30062A613 /* FinancasServiceUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancasServiceUserDefaults.swift; sourceTree = "<group>"; };
+		EE2EB6F32BC470DB0062A613 /* FinancasServiceFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancasServiceFirebase.swift; sourceTree = "<group>"; };
 		EE7036022B0D1CD7006C64F2 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		EE7036042B0D1CDF006C64F2 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		EE7036072B0D1E2F006C64F2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +109,7 @@
 		EEECB98A2AFBD5630039B984 /* CategoryCoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoordinatorProtocols.swift; sourceTree = "<group>"; };
 		EEECB98E2AFBD7400039B984 /* EntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewModel.swift; sourceTree = "<group>"; };
 		EEECB9902AFBD74A0039B984 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
+		F5FB6AADD1794F679BD2DB8B /* Pods_Financas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Financas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +117,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E2DE05874ADAFB57A8275D /* Pods_Financas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EBE5A19606228E3F448DE55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB6AADD1794F679BD2DB8B /* Pods_Financas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE2EB6F22BC470BC0062A613 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EEE211452BBF2726003BF18E /* FinancasService.swift */,
+				EE2EB6F02BC470A30062A613 /* FinancasServiceUserDefaults.swift */,
+				EE2EB6F32BC470DB0062A613 /* FinancasServiceFirebase.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		EE7036012B0D1CC6006C64F2 /* CategoryList */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +211,8 @@
 			children = (
 				EEECB95C2AFBB3A80039B984 /* Financas */,
 				EEECB95B2AFBB3A80039B984 /* Products */,
+				F6BC9480142F127D3002A2CA /* Pods */,
+				7EBE5A19606228E3F448DE55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +227,7 @@
 		EEECB95C2AFBB3A80039B984 /* Financas */ = {
 			isa = PBXGroup;
 			children = (
+				EE2EB6EE2BC46D640062A613 /* GoogleService-Info.plist */,
 				EEECB95D2AFBB3A80039B984 /* AppDelegate.swift */,
 				EEECB95F2AFBB3A80039B984 /* SceneDelegate.swift */,
 				EEECB9782AFBB5690039B984 /* Commons */,
@@ -213,7 +245,7 @@
 				EEECB9812AFBBA520039B984 /* TabBarController.swift */,
 				EEECB9752AFBB55C0039B984 /* MainCoordinatorProtocols.swift */,
 				EEECB9742AFBB55C0039B984 /* MainCoordinator.swift */,
-				EEE211452BBF2726003BF18E /* FinancasService.swift */,
+				EE2EB6F22BC470BC0062A613 /* Service */,
 				EEECB9722AFBB4E10039B984 /* Entry */,
 				EEECB9732AFBB52A0039B984 /* Category */,
 			);
@@ -277,6 +309,15 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		F6BC9480142F127D3002A2CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44A843DE0E71DDD9619CB31A /* Pods-Financas.debug.xcconfig */,
+				B2C4BD79DFF06E14C9DC7202 /* Pods-Financas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEECB96E2AFBB3AA0039B984 /* Build configuration list for PBXNativeTarget "Financas" */;
 			buildPhases = (
+				562DE0BFB19D37189DC5982F /* [CP] Check Pods Manifest.lock */,
 				EEECB9562AFBB3A80039B984 /* Sources */,
 				EEECB9572AFBB3A80039B984 /* Frameworks */,
 				EEECB9582AFBB3A80039B984 /* Resources */,
+				69FF890CEBBAA63E0D7E8747 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,10 +380,53 @@
 			files = (
 				EEECB96A2AFBB3AA0039B984 /* LaunchScreen.storyboard in Resources */,
 				EEECB9672AFBB3AA0039B984 /* Assets.xcassets in Resources */,
+				EE2EB6EF2BC46D640062A613 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		562DE0BFB19D37189DC5982F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Financas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69FF890CEBBAA63E0D7E8747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Financas/Pods-Financas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Financas/Pods-Financas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Financas/Pods-Financas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EEECB9562AFBB3A80039B984 /* Sources */ = {
@@ -388,6 +474,8 @@
 				EE7036122B17ADAA006C64F2 /* EntryListView.swift in Sources */,
 				EEECB98C2AFBD5630039B984 /* CategoryCoordinatorProtocols.swift in Sources */,
 				EEE211372BBDD87E003BF18E /* Double.swift in Sources */,
+				EE2EB6F42BC470DB0062A613 /* FinancasServiceFirebase.swift in Sources */,
+				EE2EB6F12BC470A30062A613 /* FinancasServiceUserDefaults.swift in Sources */,
 				EEE2110D2B98FF8F003BF18E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,12 +615,14 @@
 		};
 		EEECB96F2AFBB3AA0039B984 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A843DE0E71DDD9619CB31A /* Pods-Financas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X2PGUA6K9U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Financas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -555,12 +645,14 @@
 		};
 		EEECB9702AFBB3AA0039B984 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C4BD79DFF06E14C9DC7202 /* Pods-Financas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X2PGUA6K9U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Financas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

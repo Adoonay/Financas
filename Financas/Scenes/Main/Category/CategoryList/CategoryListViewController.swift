@@ -28,6 +28,12 @@ class CategoryListViewController: UIViewController, CodeView, BindableView {
         viewModel.didTapAdd()
     }
 
+    @objc
+    func handleRefresh() {
+        tableView.refreshControl?.endRefreshing()
+        viewModel.fetchList()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -42,12 +48,19 @@ class CategoryListViewController: UIViewController, CodeView, BindableView {
         }
     }
 
+    func setupRefresh() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .systemMint
+        refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+
     func setup(state: CategoryListState) {
         switch state {
         case .loading:
             tableView.isHidden = true
         case .empty:
-            tableView.isHidden = true
+            tableView.isHidden = false
         case .ready:
             tableView.isHidden = false
             tableView.reloadData()
@@ -76,8 +89,10 @@ class CategoryListViewController: UIViewController, CodeView, BindableView {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus.circle.fill"),
                                                             style: .plain, target: self, action: #selector(handleAdd))
         view.backgroundColor = .white
+        tableView.contentInsetAdjustmentBehavior = .never
         setupNavigation()
         setupTableView()
+        setupRefresh()
     }
 
     required init?(coder: NSCoder) {

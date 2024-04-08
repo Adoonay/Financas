@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 struct Entry: Codable {
-    var id: String
+    @DocumentID var id: String?
     var description: String
     var type: EntryType
     var category: Category

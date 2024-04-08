@@ -74,6 +74,7 @@ class EntryListView: UIView, CodeView {
         contentStack.addArrangedSubview(segmentedControl)
         contentStack.addArrangedSubview(cardsHeader)
         contentStack.addArrangedSubview(tableView)
+        contentStack.addArrangedSubview(UIView())
     }
 
     func setupConstraints() {
